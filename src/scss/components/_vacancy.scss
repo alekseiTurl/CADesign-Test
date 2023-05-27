@@ -1,0 +1,147 @@
+.vacancy {
+  border-radius: 0;
+  padding: 104px 105px 150px;
+  max-width: 1145px;
+
+  &__btn-close {
+    right: -70px;
+    top: 0;
+    padding: 29px;
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/svg/rec.svg);
+    background-position: center;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-color: var(--accent-color);
+
+    @include for-desktop {
+      right: 40px;
+      top: 40px;
+      padding: 25px;
+      width: 64px;
+      height: 64px;
+      background-size: 10px;
+    }
+
+    @include small-tablet {
+      right: 20px;
+      top: 20px;
+      padding: 15px;
+      width: 36px;
+      height: 36px;
+      background-size: 6px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 38px;
+    font-family: 'HeliosC';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000;
+
+    @include for-desktop {
+      margin-bottom: 54px;
+      font-size: 32px;
+      line-height: 37px;
+    }
+
+    @include small-tablet {
+      margin-bottom: 23px;
+      font-size: 19px;
+      line-height: 21px;
+    }
+  }
+
+  &__wage {
+    display: block;
+    margin-bottom: 47px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+
+    @include small-tablet {
+      margin-bottom: 29px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--black-color);
+
+    @include small-tablet {
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &__list {
+    list-style: square;
+    margin-bottom: 56px;
+
+    &::marker {
+      padding-left: 10px;
+    }
+
+    @include small-tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__list-item {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black-color);
+
+    &_marker {
+      width: max-content;
+      background: rgba(233, 134, 42, 0.17);
+    }
+
+    @include mb(25px);
+
+    @include small-tablet {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  &__data {
+    display: block;
+    margin-bottom: 56px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #828282;
+
+    @include small-tablet {
+      font-size: 11px;
+      line-height: 24px;
+    }
+  }
+
+  &__btn_mb {
+    margin-bottom: 47px;
+  }
+
+  &__btn_dn {
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  @include for-desktop {
+    padding: 128px 40px 50px;
+  }
+
+  @include small-tablet {
+    padding: 60px 30px 50px;
+  }
+}

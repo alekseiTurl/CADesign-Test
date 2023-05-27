@@ -1,0 +1,9 @@
+import "./components/dropdown.js";
+import "./components/swiper.js";
+import "./components/burger.js";
+import "./components/modal.js";
+import "./components/file-input.js";
+import "./components/enable-scroll.js";
+import "./components/disable-scroll.js";
+import "./components/form.js";
+import "./components/inputmask.js";

@@ -1,0 +1,22 @@
+:root {
+  // base
+  --font-family: "Helios", sans-serif;
+  --content-width: 1480px;
+  --content-small-width: 1180px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-small-width: calc(var(--content-small-width) + (var(--container-offset) * 2));
+  --section-offset: 70px;
+  --swiper-pagination-bullet-horizontal-gap: 20px;
+  --swiper-pagination-color: var(--accent-color);
+  --swiper-pagination-bullet-width: 10px;
+  --swiper-pagination-bullet-height: 10px;
+
+  // colors
+  --light-color: #fff;
+  --black-color: #242627;
+  --accent-color: #e9862a;
+  --accent-light: #e77e1e;
+  --gray-color: #c3c8c8;
+  --accent-blue: #187cd3;
+}

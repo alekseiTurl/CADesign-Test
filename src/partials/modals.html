@@ -1,0 +1,99 @@
+<div class="graph-modal">
+  <div class="graph-modal__container vacancy" role="dialog" aria-modal="true" data-graph-target="vacancy">
+    <button class="btn-reset js-modal-close graph-modal__close vacancy__btn-close btn-primary"
+      aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <h3 class="vacancy__title">Бухгалтер по расчету заработной платы</h3>
+      <span class="vacancy__wage">от 30 000 до 60 000 руб. до вычета налогов</span>
+      <button class="btn-reset btn-primary vacancy__btn vacancy__btn_mb vacancy__btn_dn"
+        data-graph-path="response">Откликнуться</button>
+      <h4 class="vacancy__subtitle">Обязанности
+      </h4>
+      <ul class="list-reset vacancy__responsibilities vacancy__list">
+        <li class="vacancy__list-item">Ведение бухгалтерского учета ООО и ИП "под ключ"(от обработки первичной
+          документации до сдачи всей отчетности)</li>
+        <li class="vacancy__list-item">Составление отчетности как регламентированной так и управленческой.</li>
+        <li class="vacancy__list-item">Постановку учета с нуля,восстановление учета.</li>
+        <li class="vacancy__list-item">Консультирование в выборе формы налогообложения,оптимизация налогообложения.</li>
+        <li class="vacancy__list-item">Подготовку и сдачу отчетности в ИФНС и фонды.</li>
+        <li class="vacancy__list-item">Ввод первичной документации в 1с:реализация,поступление,банк,касса.</li>
+        <li class="vacancy__list-item">Работу с клиент-банк(проведение платежей)</li>
+      </ul>
+      <h4 class="vacancy__subtitle">Требования</h4>
+      <ul class="list-reset vacancy__requirements vacancy__list">
+        <li class="vacancy__list-item">Опыт работы бухгалтером</li>
+        <li class="vacancy__list-item">Уверенный пользователь ПК</li>
+        <li class="vacancy__list-item">Личные качества(аккуратность,внимательность,нацеленность на результа)</li>
+      </ul>
+      <h4 class="vacancy__subtitle">Условия</h4>
+      <ul class="list-reset vacancy__requirements vacancy__list">
+        <li class="vacancy__list-item vacancy__list-item_marker">З/плата от 30 000</li>
+        <li class="vacancy__list-item">от 30 000 до 60 000 руб. до вычета налогов</li>
+      </ul>
+      <span class="vacancy__data">Вакансия добавлена 16 февраля 2020</span>
+      <button class="btn-reset btn-primary vacancy__btn" data-graph-path="response">Откликнуться</button>
+    </div>
+  </div>
+
+  <div class="graph-modal__container response" role="dialog" aria-modal="true" data-graph-target="response">
+    <button class="btn-reset js-modal-close response__btn-close btn-primary graph-modal__close"
+      aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <h3 class="response__title">Отклик на вакансию</h3>
+      <form action="#" method="POST" class="response__form form">
+        <div class="form__item">
+          <input type="text" class="form__input" name="vacancy" id="vacancy" required>
+          <label class="form__label form__label--top">Желаемая вакансия *</label>
+        </div>
+        <div class="form__item">
+          <input type="text" class="form__input" name="name" id="name" required>
+          <label for="name" class="form__label form__label--top">Фамилия, имя и отчество *</label>
+        </div>
+        <div class="form__item">
+          <input type="tel" class="form__input" name="phone" id="phone" required>
+          <label for="phone" class="form__label form__label--position">Мобильный телефон *</label>
+        </div>
+        <div class="form__item">
+          <input type="text" class="form__input" name="mail" id="mail" required>
+          <label for="mail" class="form__label form__label--top">E-mail</label>
+        </div>
+        <div class="form__item">
+          <input type="text" class="form__input" name="education" id="education" required>
+          <label for="education" class="form__label form__label--top">Образование</label>
+        </div>
+        <div class="form__item">
+          <input type="text" class="form__input" name="adres" id="adres" required>
+          <label for="adres" class="form__label form__label--top">Адрес места жительства</label>
+        </div>
+        <div class="form__item">
+          <input type="date" class="form__input form__input--bg" name="birthday" id="birthday" required>
+          <label for="birthday" class="form__label form__label--position">Дата рождения</label>
+        </div>
+        <div class="form__item form__item_center">
+          <input type="file" class="form__input" name="file" id="file" hidden>
+          <label class="form__input-file-btn" id="file-btn">Загрузить резюме</label>
+          <span class="form__input-span" id="file-span"></span>
+        </div>
+        <div class="form__item">
+          <textarea class="form__input form__textarea" id="comment"></textarea>
+          <label for="comment" class="form__label form__label--position form__label--top">Комментарий</label>
+        </div>
+        <div class="form__item form__submit-group">
+          <label class="custom-checkbox form__checkbox">
+            <input type="checkbox" class="custom-checkbox__field" id="checkbox" required>
+            <div class="custom-checkbox__checkbox">
+              <svg class="custom-checkbox__checkmark" width="12" height="10" viewBox="0 0 12 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 4.75L4.125 7.875L11 1" stroke="white" stroke-width="2" />
+              </svg>
+            </div>
+            <span class="custom-checkbox__content">Я принимаю условия <a href="#" class="custom-checkbox__link">передачи
+                информации</a></span>
+          </label>
+          <button class="form__btn btn-reset btn-primary" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>

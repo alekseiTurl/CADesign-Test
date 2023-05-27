@@ -1,0 +1,36 @@
+.btn-primary {
+  padding: 23px 35px;
+  font-family: 'HeliosC';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--light-color);
+  background-color: var(--accent-color);
+  transition: background-color 0.3s ease-in-out;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include hover {
+    background-color: var(--accent-light);
+  }
+
+  &:active {
+    background-color: var(--gray-color);
+  }
+
+  @include small-tablet {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @include mobile {
+    padding: 20px 30px;
+  }
+}
+
+.btn-primary.focus-visible {
+  background-color: var(--accent-light);
+}

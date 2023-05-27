@@ -1,0 +1,50 @@
+.hero {
+  padding: 120px 0;
+  background: url(../img/hero-fem.webp) bottom left 73%/678px 430px no-repeat, url(../img/hero-bg-blue.webp) left/64% 100% no-repeat, url(../img/hero-bg.webp) right/contain no-repeat;
+  background-color: #003264;
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 60px;
+    max-width: 600px;
+    font-family: 'HeliosC';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: var(--light-color);
+
+    @include tablet {
+      margin-bottom: 53px;
+      max-width: 404px;
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    @include small-tablet {
+      margin-bottom: 148px;
+      max-width: none;
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center;
+    }
+
+    @include mobile {
+      margin-bottom: 123px;
+    }
+  }
+
+  @include tablet {
+    padding: 84px 0 126px;
+    background: url(../img/hero-fem.webp) bottom right -100px /527px 334px no-repeat, url(../img/hero-bg-blue.webp) left/80% 100% no-repeat, url(../img/hero-bg.webp) right/cover no-repeat;
+  }
+
+  @include small-tablet {
+    padding: 24px 0 38px;
+    text-align: center;
+    background: url(../img/hero-fem.webp) bottom center/366px 232px no-repeat, #003264;
+  }
+
+  @include mobile {
+    background: url(../img/hero-fem.webp) bottom center/336px 212px no-repeat, #003264;
+  }
+}

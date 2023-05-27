@@ -1,0 +1,110 @@
+.header {
+  margin-bottom: 36px;
+  border-bottom: 1px solid #f2f2f2;
+  background-color: var(--light-color);
+
+  &__container {
+    @include flex-all-sb;
+
+    align-items: baseline;
+
+    @include tablet {
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    display: block;
+    margin-right: 120px;
+
+    @include for-desktop {
+      margin: 0;
+    }
+  }
+
+  &__contacts {
+    position: relative;
+    padding-top: 20px;
+
+    @include tablet {
+      padding: 0;
+    }
+  }
+
+  &__contatcs-title {
+    position: relative;
+    padding-right: 15px;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--accent-blue);
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 6px;
+      border-top: 5px solid var(--black-color);
+      border-right: 3px solid transparent;
+      border-left: 3px solid transparent;
+      width: 0;
+      height: 0;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__social {
+    position: absolute;
+    left: -50px;
+    top: 40px;
+    bottom: 0;
+    width: 200px;
+    height: 150px;
+    background-color: #fff;
+    transition: opacity 0.3s ease-in-out;
+
+    @include tablet {
+      position: static;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      width: 100%;
+      height: max-content;
+      opacity: 1;
+      clip: rect(0 0 0 0);
+    }
+  }
+
+  @include tablet {
+    /*    position: absolute;
+    z-index: 20; */
+    margin-bottom: 8px;
+    padding-top: 33px;
+    padding-bottom: 25px;
+    width: 100%;
+  }
+
+  @include mobile {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 21px;
+  }
+}
+
+.burger {
+  @include burger;
+
+  z-index: 3;
+  display: none;
+  width: 28px;
+  height: 18px;
+
+  @include tablet {
+    display: block;
+  }
+}
